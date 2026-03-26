@@ -102,6 +102,25 @@ export default function Skills() {
             </div>
           ))}
         </div>
+        <div className="mt-16 text-center">
+          <div className="inline-block bg-white rounded-xl shadow-lg p-8">
+            <h3 className="text-2xl font-bold mb-4 text-slate-900">
+              MERN Stack Expertise
+            </h3>
+            <div className="flex flex-wrap justify-center gap-4">
+              {["MongoDB", "Express.js", "React.js", "Node.js"].map(
+                (tech, index) => (
+                  <span
+                    key={index}
+                    className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white rounded-full font-semibold shadow-md"
+                  >
+                    {tech}
+                  </span>
+                ),
+              )}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
